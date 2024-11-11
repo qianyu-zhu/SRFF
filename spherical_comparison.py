@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Fri May 17 15:36:17 2024
-
-@author: juliezhu
+this script is used to compare the relative error of different kernel approximation methods on real datasets.
 """
 
 

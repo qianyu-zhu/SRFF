@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Fri May 17 15:36:17 2024
-
-@author: juliezhu
+this script is used to compare the relative error of different kernel approximation methods on approximating real-life kernel gram matrices.
+the matrix is 5000*5000, and the kernel is Gaussian kernel with bandwidth 2*d^(1/4) * sig_frac, where sig_frac is a customized scaling parameter.
+repeated 10 times to compute the sd.
 """
 
 import sys
@@ -159,3 +159,7 @@ if __name__ == "__main__":
     N_R = sys.argv[2]
     sig_frac = sys.argv[3]
     main(dataset, int(N_R), float(sig_frac))
+
+    # how to run the script:
+    # python -u real_approx.py dataset-name / number of radial nodes / scaling factor of the bandwidth
+    # e.g.: "python -u real_approx.py 'Powerplant' 1 1"

@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Sun July 7 12:00:00 2024
-
-@author: juliezhu
+visualize the distribution of the 2-norm of the data points in the dataset
 """
 import sys
 import numpy as np
@@ -19,7 +17,7 @@ def main(name):
     
     # load dataset
     bins = np.arange(0,10,0.2)
-    if name == 'synthetic':
+    if name == 'Synthetic':
         for d in d_list:
             X = get_synthetic_Gaussian_dataset(nsamples,d)
             X_norm = np.linalg.norm(X, axis = 1)

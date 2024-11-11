@@ -1,4 +1,5 @@
 __pycache__/
+.DS_Store
 datasets/*
 real_approx/*
 real_predict/*

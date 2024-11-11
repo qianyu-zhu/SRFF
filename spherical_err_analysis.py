@@ -4,6 +4,10 @@ import matplotlib.pyplot as plt
 from scipy.special import gamma
 from tools.quadrature_tools import *
 
+"""
+this script is to compare the expected squared error of Monte-Carlo and Orthogonal Monte-Carlo in different dimensions
+"""
+
 SMALL_SIZE = 8
 MEDIUM_SIZE = 10
 BIGGER_SIZE = 12
