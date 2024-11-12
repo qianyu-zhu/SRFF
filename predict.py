@@ -9,7 +9,7 @@ import sys
 import numpy as np
 import pickle as pkl
 from sklearn import svm
-from real_approx import marker_list
+from approx import marker_list
 from tools.kernel_tools import *
 from tools.dataset_tools import *
 from tools.function_tools import *
